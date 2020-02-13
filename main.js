@@ -15,7 +15,7 @@ async function main() {
 	}
 	const client = new MkmApiClient(apikey, apisec);
 	client.setAccessTokens(accesskey, accesssec)
-	//client.setDebug(false)
+	client.setDebug(false)
 
 	// Params
 	let minq = document.getElementById('minquality').value
