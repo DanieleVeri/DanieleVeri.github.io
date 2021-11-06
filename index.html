@@ -1,43 +1,78 @@
-<!DOCTYPE html>
-<html style="height:100%">
-    <head>
-        <meta charset="utf-8"/>
-        <title>GitAxian</title>
-        <script src="main.js"></script>
-    </head>
-    <body style=" opacity: 0.85; background-image: url('gitaxian_probe.png');background-repeat: no-repeat;background-size: cover;">
-        <div style="float: left; font-size: 40px;">
-            GitAxian 0.2
-        </div>
-        <div style="text-align: right;">
-            <label>API token <input id="apikey"/></label><br/>
-            <label>API secret <input id="apisec"/></label><br/>
-            <label>Access token <input id="accesskey"/></label><br/>
-            <label>Access token secret <input id="accesssec"/></label><br/>
-        </div>
-        Decklist
-        <textarea rows="10" style="margin: 1%; width: 98%;"></textarea><br/>
-        <label>Min quality <select id="minquality">
-            <option value="MT">Mint</option>
-            <option value="NM">Near Mint</option>
-            <option value="EX">Excellent</option>
-            <option value="GD">Good</option>
-            <option value="LP">Light Played</option>
-            <option value="PO">Poor Played</option>
-        </select></label><br/>
-        <label>Min seller rate <select id="minselrate">
-            <option value="5">5</option>
-            <option value="4">4</option>
-            <option value="3">3</option>
-            <option value="2">2</option>
-            <option value="1">1</option>
-        </select></label><br/>
-        <label>Language
-            <input id="lang"/>
-        </label><i> (leave empty if you don't care)</i><br/>
-        <button onclick="main().catch(console.error)"
-            style="margin-top: 20px; width: 100%; height: 50px;">
-            START
-        </button>
-    </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Daniele Verì</title>
+  <meta name="description" content="A simple view of my projects.">
+  <meta name="author" content="DanieleVerì">
+
+  <style>
+    body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    li{margin:10px}
+    img{float:left; margin-left: 10px; margin-bottom: 25px; margin-right:25px; border-radius: 5px;}
+    @keyframes example {
+      0%   {left:220px; }
+      10%  {transform: rotate(45deg);}
+      20%  {left:120%; transform:rotate(225deg);}
+      30%  {transform:rotate(-180deg);}
+      40% {left:220px;transform:rotate(0deg);}
+    }
+    div {
+      top: 20px;
+      left: 220px;
+      font-size: 25pt;
+      position: absolute;
+      animation-name: example;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+    }
+  </style>
+</head>
+
+<body>
+  <div>🚀</div>
+  <h1>Daniele Verì</h1>
+  <img width="100px" height="100px" src="https://avatars.githubusercontent.com/u/20779433?s=400&u=4620deeabf4e430f7965645d7105d83603c3a2ab&v=4"/>
+  <ul>
+    <li>Italian, 24/10/1996</li>
+    <li>Bologna (BO), Italy</li>
+    <li><a href="mailto:daniele.veri.96@gmail.com">daniele.veri.96@gmail.com</a></li>
+  </ul>
+  <h2 style="clear:both">Education</h2>
+  <ul>
+    <li>Bachelor’s degree in Computer Engineering at University of Bologna
+      <br/>Period: 2015-2018
+      <br/>Grade: 98/110
+      <br/>Thesis: <a href="https://github.com/casy-px4">Altimeter sensor fusion for the PX4 drone firmware</a></li>
+    <li>Master Degree in Computer Engineering at University of Bologna
+      <br/>Period: 2018-2019
+      <br/>Not completed, I only attended the English level B2 exam and the Information Security course.</li>
+    <li>Master Degree in Artificial Intelligence at University of Bologna
+      <br/>Period: 2019-2022
+      <br/>Grade: 109/110 (extimated on March)
+      <br/>Thesis: Empirical model learning form black box optimization </li>
+  </ul>
+  <h2>Work experiences</h2>
+  <ul>
+    <li>10/2018 – 08/2019: full stack developer (Node.Js) at <a href=https://www.cubbit.io/>Cubbit</a> s.r.l.</li>
+    <li>01/2018 – 02/2018: curricular internship at <a href=https://www.cubbit.io/>Cubbit</a> s.r.l.</li>
+    <li>2016 – 2017: website development (PHP + HTML5 + CSS3).</li>
+  </ul>
+  <h2>Personal and university projects</h2>
+  <ul>
+  <li>💻Web Applicaiton for the software engineering exam: <a href="https://github.com/abitasharp">Abitasharp</a></li>
+  <li>📱Android game based on a music visualizer. Available on Play Store: <a href="https://github.com/DanieleVeri/colorflow">Colorflow</a></li>
+  <li>♟AI player for the zero-sum perfect knowledge game: <a href="https://github.com/tablut-ai">Tablut</a></li>
+  <li>🏃Real Time Human Activity Classification from IMU data on ApacheSpark: <a href="https://github.com/DanieleVeri/activity_from_sensors">code</a></li>
+  <li>📐2D bin packing problem: constraint programming & SMT implementation: <a href="https://github.com/DanieleVeri/present-wrapping-problem">code and report</a></li>
+  <li>📰Natural language generation with the same style of the Divina Commedia: <a href="https://github.com/DanieleVeri/deep_comedy">code and report</a></li>
+  <li>📰Question Answering and Information Retrieval, from development to deploy: <a href="https://github.com/the-SQuAD-squad">the SQuAD squad!</a></li>
+  <li>🌄3D regitration of point clouds grabbed via Kinect: <a href="https://github.com/DanieleVeri/pcl_registration">code</a></li>
+  <li>🌄DeTR finetuning on Cityscapes dataset, presenting a consistent tecnique to reduce the Transformers training time when finetuning: <a href="https://github.com/DanieleVeri/fair-DETR">code and report</a></li>
+  <li>👨‍💻OpenMP and CUDA implementations of a locally connected MLP: <a href="https://github.com/DanieleVeri/MLP_CUDA_OMP">code and report</a></li>
+  <li>📈Anomaly detection in HPC: CINECA Marconi-100: <a href="https://github.com/DanieleVeri/anomaly-detection-HPC">code and report</a></li>
+  </ul>
+</body>
 </html>
